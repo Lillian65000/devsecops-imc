@@ -40,7 +40,12 @@ jobs:
       with:
         image-ref: ${{ secrets.DOCKERHUB_USERNAME }}/imc-web:latest
 
-    - name: Install Python dependencies
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
       run: pip install -r app/requirements.txt
 
     - name: Scan code with Snyk
