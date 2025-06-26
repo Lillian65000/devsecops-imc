@@ -1,0 +1,49 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.pyo
+.Python
+env/
+venv/
+ENV/
+env.bak/
+
+# ---- Pip / requirements ----
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ---- Bytecode ----
+*.pyc
+*.pyd
+*.pdb
+
+# ---- IDEs / editors ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# ---- Docker / build ----
+*.log
+*.out
+.dockerignore
+.docker/
+docker-compose.override.yml
+
+# ---- Secrets & configs ----
+.env
+.env.*
+*.key
+*.pem
+
+# ---- GitHub Actions cache (facultatif) ----
+.github/workflows/*.bak
+.github/workflows/*.tmp
+
+# ---- OS / Misc ----
+.DS_Store
+Thumbs.db
